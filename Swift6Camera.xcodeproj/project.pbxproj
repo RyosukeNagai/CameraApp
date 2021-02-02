@@ -13,6 +13,7 @@
 		CDBB203C25C96E9D00C74950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB203A25C96E9D00C74950 /* Main.storyboard */; };
 		CDBB203E25C96E9F00C74950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBB203D25C96E9F00C74950 /* Assets.xcassets */; };
 		CDBB204125C96E9F00C74950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB203F25C96E9F00C74950 /* LaunchScreen.storyboard */; };
+		CDBB204B25C9734300C74950 /* CheckPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB204A25C9734300C74950 /* CheckPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CDBB203D25C96E9F00C74950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBB204025C96E9F00C74950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBB204225C96E9F00C74950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBB204A25C9734300C74950 /* CheckPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CDBB203425C96E9D00C74950 /* AppDelegate.swift */,
 				CDBB203625C96E9D00C74950 /* SceneDelegate.swift */,
 				CDBB203825C96E9D00C74950 /* ViewController.swift */,
+				CDBB204A25C9734300C74950 /* CheckPermission.swift */,
 				CDBB203A25C96E9D00C74950 /* Main.storyboard */,
 				CDBB203D25C96E9F00C74950 /* Assets.xcassets */,
 				CDBB203F25C96E9F00C74950 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				CDBB203925C96E9D00C74950 /* ViewController.swift in Sources */,
 				CDBB203525C96E9D00C74950 /* AppDelegate.swift in Sources */,
 				CDBB203725C96E9D00C74950 /* SceneDelegate.swift in Sources */,
+				CDBB204B25C9734300C74950 /* CheckPermission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

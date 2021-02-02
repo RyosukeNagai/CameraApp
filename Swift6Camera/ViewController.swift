@@ -6,20 +6,23 @@
 //
 
 import UIKit
+import Photos
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
+    var checkPermission = CheckPermission()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkPermission.checkCamera()
         
         
     }
 
    
     @IBAction func camera(_ sender: Any) {
+        
         
         
     }
@@ -32,6 +35,17 @@ class ViewController: UIViewController {
     @IBAction func share(_ sender: Any) {
         
         
+    }
+    
+    //アルバムを立ち上げるメソッド
+    func createImagePicker(sourceType:UIImagePickerController.SourceType){
+        
+        //インスタンスの作成
+        let cameraPicker = UIImagePickerController()
+        cameraPicker.sourceType = sourceType
+        cameraPicker.delegate = self
+        cameraPicker.allowsEditing = true
+        self.present(cameraPicker, animated: true, completion: nil)
     }
     
     
