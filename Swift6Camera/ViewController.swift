@@ -39,7 +39,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func share(_ sender: Any) {
         
-        
+        let text = ""
+        let image = backImageView.image?.jpegData(compressionQuality: 0.5)
+        let item = [text,image as Any]
+        let activityVC = UIActivityViewController(activityItems: item, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
         
     }
     
@@ -54,6 +58,26 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         self.present(cameraPicker, animated: true, completion: nil)
     }
     
+    //撮影（アルバム）のキャンセルボタンがタップされた時
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let picerImage = info[.editedImage] as? UIImage{
+            
+            //画像を反映する処理
+            backImageView.image = picerImage
+            
+            //閉じる処理
+            picker.dismiss(animated: true, completion: nil)
+            
+        }
+        
+        
+    }
     
 }
 
