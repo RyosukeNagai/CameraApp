@@ -12,6 +12,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     var checkPermission = CheckPermission()
     
+    
+    @IBOutlet weak var backImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +38,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     
     @IBAction func share(_ sender: Any) {
+        
         
         
     }
